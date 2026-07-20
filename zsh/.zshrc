@@ -4,3 +4,6 @@ source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.z
 
 
 eval "$(zoxide init zsh)"
+
+
+. "$HOME/.local/bin/env"

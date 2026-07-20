@@ -8,20 +8,20 @@ sudo apt-get install -y build-essential procps curl file git
 
 # Homebrew
 ## Install
-if ! command -v brew &>/dev/null; then
-    echo "Installing Homebrew..."
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-else
-    echo "✅ Homebrew already installed"
-fi
+# if ! command -v brew &>/dev/null; then
+#     echo "Installing Homebrew..."
+#     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# else
+#     echo "✅ Homebrew already installed"
+# fi
 
-brew analytics off
-brew update
-
+# brew analytics off
+# brew update
 
 # Add Homebrew to PATH for the current shell and future Bash shells
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bashrc
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bashrc
+
 
 # Install git
 # brew install git
