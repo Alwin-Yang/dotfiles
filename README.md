@@ -19,8 +19,16 @@ git clone https://github.com/Alwin-Yang/dotfiles.git ~/dotfiles
 
 Run the install script with bash. Your login shell can be zsh — that does not matter.
 
+Select branch
+```bash
+git checkout <branch>
+```
+
 ```bash
 /bin/bash ~/dotfiles/install.sh
 ```
 
 This installs build tools on Linux (via apt), Homebrew, uv, and Homebrew packages (stow, zsh, plugins, zoxide), then stows the zsh config into your home directory.
+
+
+
