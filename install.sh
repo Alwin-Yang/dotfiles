@@ -24,7 +24,7 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bashrc
 
 # Install git
-brew install git
+# brew install git
 
 # Install stow
 brew install stow
