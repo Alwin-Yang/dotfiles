@@ -1,0 +1,98 @@
+{
+    "bibitems": [
+    ],
+    "bibtexfiles": [
+    ],
+    "childdocs": [
+        "/Users/zewen/Downloads/[AAAI 2026] SkyGP (1)/CameraReady/"
+    ],
+    "filename": "/Users/zewen/Downloads/[AAAI 2026] SkyGP (1)/CameraReady/ReproducibilityChecklist.tex",
+    "labels": [
+    ],
+    "modified": "",
+    "packages": [
+        "#courier",
+        "letterpaper#latex-document",
+        "letterpaper#tex",
+        "#helvet",
+        "submission#aaai2026",
+        "#times",
+        "#xcolor"
+    ],
+    "refs": [
+    ],
+    "toc": [
+        "2#Reproducibility Checklist#50",
+        "-1##91"
+    ],
+    "usercommands": [
+        [
+            "\\reproStandalonetrue",
+            "\\reproStandalonetrue"
+        ],
+        [
+            "\\reproStandalonefalse",
+            "\\reproStandalonefalse"
+        ],
+        [
+            "\\ifreproStandalone",
+            "\\ifreproStandalone"
+        ],
+        [
+            "\\thechecksubsection",
+            "\\thechecksubsection"
+        ],
+        [
+            "\\leftmargin",
+            "\\leftmargin\\leftmargini \\topsep .5em \\parsep .5em \\itemsep .5em}"
+        ],
+        [
+            "\\leftmargin",
+            "\\leftmargin\\leftmarginiii \\labelwidth\\leftmarginiii \\advance\\labelwidth-\\labelsep \\topsep .4em \\parsep .4em \\itemsep .4em}\\makeatother"
+        ],
+        [
+            "\\reproStandalonetrue",
+            "\\reproStandalonetrue"
+        ],
+        [
+            "\\reproStandalonefalse",
+            "\\reproStandalonefalse"
+        ],
+        [
+            "\\ifreproStandalone",
+            "\\ifreproStandalone"
+        ],
+        [
+            "\\leftmargin",
+            "\\leftmargin\\leftmarginii \\labelwidth\\leftmarginii \\advance\\labelwidth-\\labelsep \\topsep .4em \\parsep .4em \\itemsep .4em}"
+        ],
+        [
+            "\\question",
+            "\\question{}{}"
+        ],
+        [
+            "\\thesubsection",
+            "\\thesubsection"
+        ],
+        [
+            "\\checkitem",
+            "\\checkitem"
+        ],
+        [
+            "\\ifyespoints",
+            "\\ifyespoints{}"
+        ],
+        [
+            "\\labelenumi",
+            "\\labelenumi"
+        ],
+        [
+            "\\thecheckitem",
+            "\\thecheckitem"
+        ],
+        [
+            "\\checksubsection",
+            "\\checksubsection{}"
+        ]
+    ]
+}

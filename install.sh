@@ -2,29 +2,41 @@
 
 set -euo pipefail
 
-# Install build tools
-sudo apt-get update
-sudo apt-get install -y build-essential procps curl file git
+# Install build tools (Linux only; macOS uses Homebrew/Xcode CLI tools)
+if [[ "$(uname -s)" != "Darwin" ]]; then
+    sudo apt-get update
+    sudo apt-get install -y build-essential procps curl file git
+fi
 
-# Homebrew
-## Install
-# if ! command -v brew &>/dev/null; then
-#     echo "Installing Homebrew..."
-#     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-# else
-#     echo "✅ Homebrew already installed"
-# fi
+# Install Homebrew
+if ! command -v brew &>/dev/null; then
+    echo "Installing Homebrew..."
+    NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+    echo "✅ Homebrew already installed"
+fi
 
-# brew analytics off
-# brew update
+# Put brew on PATH for this script, and persist it for future zsh sessions
+if [[ "$(uname -s)" == "Darwin" ]]; then
+    [[ -x /opt/homebrew/bin/brew ]] && BREW_BIN=/opt/homebrew/bin/brew || BREW_BIN=/usr/local/bin/brew
+else
+    BREW_BIN=/home/linuxbrew/.linuxbrew/bin/brew
+fi
+eval "$("$BREW_BIN" shellenv)"
+if ! grep -qs "brew shellenv" "$HOME/.zprofile"; then
+    echo "eval \"\$($BREW_BIN shellenv)\"" >> "$HOME/.zprofile"
+fi
 
-# Add Homebrew to PATH for the current shell and future Bash shells
-# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-# echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bashrc
+brew analytics off
 
-
-# Install git
-# brew install git
+# Install uv (standalone installer; sourced via ~/.local/bin/env in stowed ~/.zshrc)
+[ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
+if ! command -v uv &>/dev/null; then
+    echo "Installing uv..."
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+else
+    echo "✅ uv already installed"
+fi
 
 # Install stow
 brew install stow
@@ -33,19 +45,17 @@ brew install stow
 brew install zsh
 brew install zsh-autosuggestions zsh-syntax-highlighting
 
-
-# Install zoxide
+# Install zoxide (configured in stowed ~/.zshrc)
 brew install zoxide
-# Configure zoxide for bash
-echo 'eval "$(zoxide init bash)"' >> ~/.bashrc
-
-
 
 # Navigate to dotfiles directory
 echo "Stowing dotfiles..."
-cd $HOME/dotfiles || exit
+cd "$HOME/dotfiles" || exit
+
+# Install neovim
+brew install neovim
 
 # Stow dotfiles packages
-stow -R -t ~ zsh
+stow -R -t ~ zsh uv gh nvim textstudio
 
 echo "Dotfiles setup complete!"

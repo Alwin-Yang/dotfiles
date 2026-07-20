@@ -1,0 +1,26 @@
+{
+    "bibitems": [
+    ],
+    "bibtexfiles": [
+        "/Users/zewen/Downloads/l4dc_2024/yourbibfile.bib#yourbibfile"
+    ],
+    "childdocs": [
+    ],
+    "filename": "/Users/zewen/Downloads/l4dc_2024/l4dc2024-sample.tex",
+    "labels": [
+    ],
+    "modified": "Mon Oct 9 10:11:37 2023",
+    "packages": [
+        "#times",
+        "12pt, anon#l4dc2024"
+    ],
+    "refs": [
+    ],
+    "toc": [
+        "2#Introduction#46",
+        "3#time-based statistical error#48",
+        "3#coorlaction-based statistical error#53"
+    ],
+    "usercommands": [
+    ]
+}

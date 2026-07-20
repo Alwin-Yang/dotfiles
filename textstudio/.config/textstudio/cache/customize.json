@@ -1,0 +1,37 @@
+{
+    "bibitems": [
+    ],
+    "bibtexfiles": [
+    ],
+    "childdocs": [
+    ],
+    "filename": "/Users/zewen/Nutstore Files/Research/005.Latex_offline/Overleaf Projects (53 items)/6auv/BachelorThesis_Xinyi/include/customize.tex",
+    "labels": [
+        "vector",
+        "matrix",
+        "BIBO",
+        "control",
+        "HRC",
+        "MPC"
+    ],
+    "modified": "Tue Aug 8 17:57:20 2023",
+    "packages": [
+        "acronym, style=alttree, shortcuts, toc=true, nomain, nonumberlist#glossaries",
+        "xindy#imakeidx",
+        "#setspace",
+        "acronym,style=alttree, toc=true, shortcuts, xindy, nomain, nonumberlist#glossaries",
+        "#filecontents"
+    ],
+    "refs": [
+    ],
+    "toc": [
+        "-1#gloss.aux#65"
+    ],
+    "usercommands": [
+        "\\set",
+        "\\vec",
+        "\\makeglossaries",
+        "\\printglossary",
+        "\\Mat"
+    ]
+}

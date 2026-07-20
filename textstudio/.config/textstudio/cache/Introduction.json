@@ -1,0 +1,37 @@
+{
+    "bibitems": [
+    ],
+    "bibtexfiles": [
+    ],
+    "childdocs": [
+        "/Users/zewen/Nutstore Files/Research/005.Latex_offline/Overleaf Projects (53 items)/6auv/BachelorThesis_Xinyi/structure.tex"
+    ],
+    "filename": "/Users/zewen/Nutstore Files/Research/005.Latex_offline/Overleaf Projects (53 items)/6auv/BachelorThesis_Xinyi/chapters/Introduction.tex",
+    "labels": [
+        "intro",
+        "structure",
+        "sciAUV"
+    ],
+    "modified": "Tue Aug 8 17:57:20 2023",
+    "packages": [
+    ],
+    "refs": [
+        "structure",
+        "conclusion",
+        "simulation",
+        "GPcontrol",
+        "backstepping",
+        "PaPF",
+        "intro",
+        "sciAUV"
+    ],
+    "toc": [
+        "1#Introduction#1",
+        "2#Overview#3",
+        "2#Related Work#18",
+        "2#Contribution and Structure#24",
+        "-1#structure.tex#31"
+    ],
+    "usercommands": [
+    ]
+}

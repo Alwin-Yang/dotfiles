@@ -1,0 +1,73 @@
+{
+    "bibitems": [
+    ],
+    "bibtexfiles": [
+        "/Users/zewen/Downloads/AAMAS-2024 Formatting Instructions/ref.bib#ref"
+    ],
+    "childdocs": [
+    ],
+    "filename": "/Users/zewen/Downloads/AAMAS-2024 Formatting Instructions/0908.tex",
+    "labels": [
+        "eq_tilde_mu",
+        "eq_Kinv",
+        "ass_dataset",
+        "eq_tilde_simga",
+        "sec_CICL_DGP",
+        "ass_kernel",
+        "sec_dynamicalData",
+        "eq_simga",
+        "eq_mu"
+    ],
+    "modified": "Mon Sep 11 18:28:10 2023",
+    "packages": [
+        "sigconf#aamas",
+        "#balance",
+        "#amsmath",
+        "capitalise#cleveref"
+    ],
+    "refs": [
+        "sec_CICL_DGP",
+        "sec_dynamicalData",
+        "eq_Kinv",
+        "ass_dataset"
+    ],
+    "toc": [
+        "2#Introduction#134",
+        "2#Preliminaries and Problem Setting#146",
+        "3#Notation and Graph Theory#147",
+        "3#Problem Description#153",
+        "3#Gaussian Process Regression#179",
+        "2#Efficient GPR with Dynamical Data Allocation#212",
+        "2#Concordance-Informed Cooperative Learning with Distributed GP#238",
+        "3#Concordance-Informed Aggregation#240",
+        "3#Prediction Error Bound#265",
+        "2#Experimental Evaluation#268",
+        "3#Function Approximation#270",
+        "3#Dynamical System Estimation#272",
+        "2#Conclusion and Discussion#274"
+    ],
+    "usercommands": [
+        "corollary",
+        "corollary",
+        "\\commentDAI",
+        "\\blueZ",
+        "\\thefootnote",
+        "\\BibTeX",
+        "proposition",
+        "proposition",
+        "\\commentZW",
+        "\\argmax",
+        "\\commentZ",
+        "theorem",
+        "theorem",
+        "remark",
+        "remark",
+        "lemma",
+        "lemma",
+        "\\thefootnote",
+        "assumption",
+        "assumption",
+        "\\redZ",
+        "\\argmin"
+    ]
+}
