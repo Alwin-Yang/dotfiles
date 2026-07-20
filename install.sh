@@ -36,8 +36,6 @@ brew install zsh-autosuggestions zsh-syntax-highlighting
 
 # Install zoxide
 brew install zoxide
-# Configure zoxide for zsh
-echo 'eval "$(zoxide init zsh)"' >> ~/.zshrc
 # Configure zoxide for bash
 echo 'eval "$(zoxide init bash)"' >> ~/.bashrc
 
