@@ -52,6 +52,10 @@ brew install neovim
 # Install gh
 brew install gh
 
+# Install rsync
+brew install rsync
+
+
 # Stow dotfiles packages
 stow -R -t ~ zsh 
 
