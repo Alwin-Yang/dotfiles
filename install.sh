@@ -49,7 +49,10 @@ cd "$HOME/dotfiles" || exit
 # Install neovim
 brew install neovim
 
+# Install gh
+brew install gh
+
 # Stow dotfiles packages
-stow -R -t ~ zsh uv gh nvim textstudio
+stow -R -t ~ zsh uv nvim 
 
 echo "Dotfiles setup complete!"
