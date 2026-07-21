@@ -69,6 +69,6 @@ brew install tmux
 echo "Stowing dotfiles..."
 cd "$HOME/dotfiles" || exit
 # Stow dotfiles packages
-stow -R -t ~ zsh wezterm p10k
+stow -R -t ~ zsh wezterm p10k tmux
 
 echo "Dotfiles setup complete!"
