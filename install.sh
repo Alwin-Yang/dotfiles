@@ -38,6 +38,8 @@ brew install stow
 # Install zsh and plugins
 brew install zsh
 brew install zsh-autosuggestions zsh-syntax-highlighting
+# Install powerlevel10k
+brew install powerlevel10k
 
 # Install zoxide (configured in stowed ~/.zshrc)
 brew install zoxide
@@ -54,6 +56,10 @@ brew install gh
 
 # Install rsync
 brew install rsync
+
+# Install font
+brew install font-meslo-lg-nerd-font
+
 
 
 # Stow dotfiles packages
