@@ -2,11 +2,9 @@
 
 set -euo pipefail
 
-# Install build tools (Linux only; macOS uses Homebrew/Xcode CLI tools)
-if [[ "$(uname -s)" != "Darwin" ]]; then
-    sudo apt-get update
-    sudo apt-get install -y build-essential procps curl file git
-fi
+# Install build tools
+sudo apt-get update
+sudo apt-get install -y build-essential procps curl file git
 
 # Install Homebrew
 if ! command -v brew &>/dev/null; then
@@ -17,11 +15,7 @@ else
 fi
 
 # Put brew on PATH for this script, and persist it for future zsh sessions
-if [[ "$(uname -s)" == "Darwin" ]]; then
-    [[ -x /opt/homebrew/bin/brew ]] && BREW_BIN=/opt/homebrew/bin/brew || BREW_BIN=/usr/local/bin/brew
-else
-    BREW_BIN=/home/linuxbrew/.linuxbrew/bin/brew
-fi
+BREW_BIN=/home/linuxbrew/.linuxbrew/bin/brew
 eval "$("$BREW_BIN" shellenv)"
 if ! grep -qs "brew shellenv" "$HOME/.zprofile"; then
     echo "eval \"\$($BREW_BIN shellenv)\"" >> "$HOME/.zprofile"
