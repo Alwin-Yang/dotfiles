@@ -41,12 +41,14 @@ brew install zsh-autosuggestions zsh-syntax-highlighting
 # Install powerlevel10k
 brew install powerlevel10k
 
+# Install font
+brew install font-meslo-lg-nerd-font
+
 # Install zoxide (configured in stowed ~/.zshrc)
 brew install zoxide
 
-# Navigate to dotfiles directory
-echo "Stowing dotfiles..."
-cd "$HOME/dotfiles" || exit
+# Install eza
+brew install eza
 
 # Install neovim
 brew install neovim
@@ -57,11 +59,15 @@ brew install gh
 # Install rsync
 brew install rsync
 
-# Install font
-brew install font-meslo-lg-nerd-font
+# Install tumx
+brew install tmux
 
 
 
+
+# Navigate to dotfiles directory
+echo "Stowing dotfiles..."
+cd "$HOME/dotfiles" || exit
 # Stow dotfiles packages
 stow -R -t ~ zsh 
 
