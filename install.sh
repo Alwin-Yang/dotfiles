@@ -53,6 +53,6 @@ brew install neovim
 brew install gh
 
 # Stow dotfiles packages
-stow -R -t ~ zsh nvim 
+stow -R -t ~ zsh 
 
 echo "Dotfiles setup complete!"
